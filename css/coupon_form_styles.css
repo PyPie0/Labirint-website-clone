@@ -1,0 +1,66 @@
+.coupon-form-container {
+	width: 190px;
+	font-family: "PT_Sans Regular";
+	font-size: 17px;
+	height: 260px;
+}
+
+.coupon-form-container > * {
+	margin-bottom: 20px;
+}
+
+.coupon-form-container .title {
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+.coupon-form-container .icon {
+	background: url(../img/gift_icon.png);
+	width: 22px;
+	height: 20px;
+}
+
+.coupon-form-title {
+	display: flex;
+	justify-content: space-between;
+	color: #0650c2;
+}
+
+.coupon-form-container .bonus {
+	color: #0650c2;
+}
+
+.coupon-form-container .rules a {
+	color: #0650c2;
+	text-decoration: underline;
+}
+
+.coupon-form-container form button {
+	margin-top: 20px;
+	border: 1px solid #0650c2;
+	color: #0650c2;
+	background-color: #ffffff;
+	padding: 5px 15px;
+	width: 90%;
+	cursor: pointer;
+}
+
+.coupon-form-container form button:hover {
+	box-shadow: 0px 0px 3px #000000;
+}
+
+.coupon-form-container form {
+	opacity: 0.5;
+}
+
+.coupon-form-container form input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #a9a9a9;
+}
+
+.coupon-form-container form input:focus {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #5100ff;
+}
