@@ -7,11 +7,16 @@ from .models import (
 	Illustrator,
 	Book,
 	PublishingHouse,
+	Series,
 )
 
 
 class PublishingHouseAdmin(admin.ModelAdmin):
 	prepopulated_fields = {'slug': ('title',)}
+
+
+class SeriesAdmin(admin.ModelAdmin):
+	pass
 
 
 class AuthorAdmin(admin.ModelAdmin):
@@ -40,3 +45,4 @@ admin.site.register(Translator, TranslatorAdmin)
 admin.site.register(Illustrator, IllustratorAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Book, BookAdmin)
+admin.site.register(Series, SeriesAdmin)

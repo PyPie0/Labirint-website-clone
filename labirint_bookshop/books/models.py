@@ -94,6 +94,21 @@ class Category(MPTTModel):
 		return self.title
 
 
+class Series(models.Model):
+	title = models.CharField('Название', max_length=255)
+	publishing_house = models.ForeignKey(
+		PublishingHouse,
+		on_delete=models.SET_NULL,
+		blank=True,
+		null=True,
+		verbose_name='Издательство'
+	)
+
+	class Meta:
+		verbose_name = 'Серия'
+		verbose_name_plural = 'Серии'
+
+
 class Book(models.Model):
 	title = models.CharField('Название', max_length=255)
 	category = TreeForeignKey(
@@ -117,6 +132,7 @@ class Book(models.Model):
 		PublishingHouse,
 		on_delete=models.SET_NULL,
 		null=True,
+		blank=True,
 		verbose_name='Издательство'
 	)
 	ISBN = models.CharField('ISBN', max_length=255)
@@ -150,6 +166,13 @@ class Book(models.Model):
 		Translator,
 		blank=True,
 		verbose_name='Переводчик',
+	)
+	series = models.ForeignKey(
+		Series,
+		on_delete=models.SET_NULL,
+		null=True,
+		blank=True,
+		verbose_name='Издательство'
 	)
 
 	class Meta:
