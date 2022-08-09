@@ -12,6 +12,7 @@ class PublishingHouse(models.Model):
 		db_index=True,
 		unique=True
 	)
+	description = models.TextField('Описание', blank=True)
 
 	class Meta:
 		verbose_name = 'Издательство'
@@ -24,7 +25,7 @@ class PublishingHouse(models.Model):
 class Person(models.Model):
 	first_name = models.CharField('Имя', max_length=55)
 	last_name = models.CharField('Фамилия', max_length=55)
-	middle_name = models.CharField('Второе имя', max_length=55)
+	middle_name = models.CharField('Второе имя', max_length=55, blank=True)
 	slug = models.SlugField(
 		'Слаг', 
 		max_length=255,
@@ -37,7 +38,7 @@ class Person(models.Model):
 		ordering = ['first_name', 'last_name']
 
 	def __str__(self):
-		return f'{self.first_name} {self.last_name} {self.middle_name}'
+		return f'{self.last_name} {self.first_name} {self.middle_name}'
 
 
 class Illustrator(Person):
