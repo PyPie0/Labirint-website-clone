@@ -103,6 +103,7 @@ class Series(models.Model):
 		null=True,
 		verbose_name='Издательство'
 	)
+	description = models.TextField('Описание', blank=True)
 
 	class Meta:
 		verbose_name = 'Серия'
