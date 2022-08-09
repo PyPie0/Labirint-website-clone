@@ -109,6 +109,9 @@ class Series(models.Model):
 		verbose_name = 'Серия'
 		verbose_name_plural = 'Серии'
 
+	def __str__(self):
+		return self.title
+
 
 class Book(models.Model):
 	title = models.CharField('Название', max_length=255)
@@ -173,7 +176,7 @@ class Book(models.Model):
 		on_delete=models.SET_NULL,
 		null=True,
 		blank=True,
-		verbose_name='Издательство'
+		verbose_name='Серия'
 	)
 
 	class Meta:
