@@ -1,0 +1,12 @@
+.env
+*.pyc
+*.log
+*.sublime-project
+*.sublime-workspace
+*~
+__pycache__/
+media/
+db.sqlite3
+venv
+*-photos/
+photos/
