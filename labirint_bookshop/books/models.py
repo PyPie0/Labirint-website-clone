@@ -95,12 +95,6 @@ class Category(MPTTModel):
 
 class Book(models.Model):
 	title = models.CharField('Название', max_length=255)
-	slug = models.SlugField(
-		'Слаг',
-		max_length=255,
-		db_index=True,
-		unique=True
-	)
 	category = TreeForeignKey(
 		Category, 
 		on_delete=models.SET_NULL,
@@ -156,3 +150,13 @@ class Book(models.Model):
 		blank=True,
 		verbose_name='Переводчик',
 	)
+
+	class Meta:
+		verbose_name = 'Книга'
+		verbose_name_plural = 'Книги'
+
+	def __str__(self):
+		return self.title
+
+	def get_discount_price(self):
+		return int(self.price * (100 - self.discount) / 100)
