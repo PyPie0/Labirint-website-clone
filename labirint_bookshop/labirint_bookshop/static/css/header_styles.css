@@ -1,0 +1,279 @@
+header {
+	height: 155px;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: "Roboto Regular";
+	font-size: 15px;
+}
+
+/*Header icon position*/
+.icon {
+	background: url(../svg/header_sprite.svg) no-repeat;
+}
+
+.profile-icon .icon {
+	background-position: 0px 0px;
+	width: 27px;
+	height: 30px;
+}
+
+.messages-icon .icon {
+	background-position: 0px -39px;
+	width: 24px;
+	height: 26px;
+}
+
+.favorites-icon .icon {
+	background-position: 0px -78px;
+	width: 29px;
+	height: 26px;
+}
+
+.cart-icon .icon {
+	background-position: 0px -117px;
+	width: 31px;
+	height: 32px;
+}
+
+
+/*Header search form styles*/
+
+#header-searchForm {
+	border-radius: 4px;
+	background-color: #dedcdc;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+}
+
+#header-searchForm:hover {
+	opacity: 0.9;
+}
+
+.top-header-right-searchForm {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.searchField {
+	border: none;
+	outline: none;
+	background-color: #dedcdc;
+	flex-basis: 80%;
+}
+
+.searchField-button {
+	border: none;
+	outline: none;
+	background-color: #dedcdc;
+	cursor: pointer;
+}
+
+.searchField-button-text {
+	opacity: 0.5;
+}
+
+.searchField-button-icon {
+	background: url(../svg/header_sprite.svg) no-repeat;
+	background-position: -65px 0px;
+	width: 17px;
+	height: 17px;
+	display: block;
+	float: left;
+	opacity: 0.5;
+	margin-right: 5px;
+}
+
+
+/*Position top header*/
+.top-header {
+	display: flex;
+	height: 80%;
+}
+
+.top-header-right {
+	width: 100%;
+}
+
+
+.top-header-right-items {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #3d3d3d;
+	padding: 15px 0px;
+}
+
+#header-searchForm {
+	flex-basis: 50%;
+	opacity: 1;
+	font-size: 17px;
+}
+
+.top-header-right-item {
+	margin-right: 10px;
+	opacity: 0.8;
+}
+
+.top-header-right-item:hover {
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.item-container {
+	height: 100%;
+}
+
+.item-container a {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: #ffffff;
+}
+
+.top-header-right-item:last-child {
+	margin-right: 50px;
+}
+
+.top-header-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	margin: 0px 20px;
+}
+
+.top-header-left-logo {
+	padding: 20px 15px;
+}
+
+.top-header-left-logo a {
+	font-family: "Qanelas ExtraBold";
+	font-size: 35px;
+	color: #ffffff;
+}
+
+.top-header-left-bait {
+	display: flex;
+}
+
+.top-header-left-bait-numbers {
+	margin-right: 5px;
+	color: #f00;
+	font-size: 30px;
+}
+
+.top-header-left-bait-text {
+	display: flex;
+	align-items: center;
+	width: 70px;
+	opacity: 0.5;
+	line-height: 1;
+}
+
+.bot-header {
+	background-color: #e8e6e6;
+	width: 100%;
+	height: 20%;
+	border: 1px solid #8c8c8c;
+	margin-top: 10px;
+}
+
+.top-header-right-nav-menu {
+	width: 100%;
+}
+
+.menu-list:last-child {
+	margin-right: 200px;
+}
+
+.cat-menu-item {
+	margin-left: -40px;
+}
+
+.cat-menu-item li {
+	margin-left: -40px;
+}
+
+.top-header-right-nav-menu > ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-header-right-nav-menu ul > li a {
+	display: block;
+	color: #ffffff;
+	opacity: 0.7;
+}
+
+.top-header-right-nav-menu ul > li a:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+.top-header-right-nav-menu li ul {
+	box-shadow: 0 4px 10px 4px rgba(0,0,0,.2);
+	position: absolute;
+	width: 150px;
+	background-color: #f2f2f2;
+	display: none;
+}
+
+.top-header-right-nav-menu li > ul li ul {
+	position: absolute;
+	right: -150px;
+	top: 0;
+}
+
+.top-header-right-nav-menu li:hover > ul {
+	display: block;
+	transition: 0.5s;
+} 
+
+.cat-menu-item > ul li a {
+	padding: 10px;
+	color: #000000;
+	border-bottom: 1px solid #ededed;
+}
+
+.bot-header ul {
+	margin-top: 0px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-top: 3px;
+}
+
+.bot-header ul li {
+	margin: 3px;
+}
+
+.bot-header ul li a {
+	color: #595858;
+	font-size: 12px;
+
+}
+
+.bot-header ul li a:hover {
+	color: #000000;
+	transition: 0.4s;
+}
+
+.social-icon {
+	background: url(../svg/header_sprite.svg) no-repeat;
+	background-position: -260px -100px;
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	opacity: 0.5;
+	margin-right: 5px;
+}
+
+.social-text {
+	white-space: nowrap;
+}
