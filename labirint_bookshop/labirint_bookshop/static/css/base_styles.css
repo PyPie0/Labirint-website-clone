@@ -1,0 +1,34 @@
+@font-face {
+	font-family: "Roboto Regular";
+	src: url("../fonts/Roboto-Regular.ttf");
+}
+
+
+@font-face {
+	font-family: "Qanelas ExtraBold";
+	src: url("../fonts/Qanelas-ExtraBold.ttf");
+}
+
+@font-face {
+	font-family: "PT_Sans Regular";
+	src: url("../fonts/PT_Sans-Web-Regular.ttf");
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
