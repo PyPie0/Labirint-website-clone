@@ -1,12 +1,30 @@
 {% extends "base.html" %}
 {% load static %}
+{% load books_tags %}
 
 
 {% block content %}
-	{% load books_tags %}
-	{% book_slider1 test_book_list %}
-	{% book_slider1 test_book_list %}
+<link rel="stylesheet" href="{% static 'books/css/home_styles.css' %}">
+<link rel="stylesheet" href="{% static 'css/ChiefSlider/chief-slider.css' %}">
+<link rel="stylesheet" href="{% static 'books/css/book_slider1_styles.css' %}">
+<link rel="stylesheet" href="{% static 'books/css/book_card1_styles.css' %}">
+<link rel="stylesheet" href="{% static 'books/css/promo_slider_styles.css' %}">
+<link rel="stylesheet" href="{% static 'books/css/book_slider2_styles.css' %}">
+<link rel="stylesheet" href="{% static 'books/css/book_card2_styles.css' %}">
+
+<div class="main-promotions">
+	<div class="home-promo-slider">
+		{% promo_slider %}
+	</div>
+	<div class="home-bookslider2">
+		<div class="title">Лучшая покупка дня</div>
+		<div class="home-bookslider2-container">{% book_slider2 test_book_list %}</div>
+		<a href="">Больше книг со кидками</a>
+	</div>
+</div>
 
 <script src="{% static 'js/ChiefSlider/chief-slider.js' %}"></script>
 <script src="{% static 'books/js/book_slider_init.js' %}"></script>
+<script src="{% static 'books/js/promo_slider_init.js' %}"></script>
+<script src="{% static 'books/js/book_slider2_init.js' %}"></script>
 {% endblock content %}

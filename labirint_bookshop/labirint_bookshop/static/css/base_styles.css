@@ -3,7 +3,6 @@
 	src: url("../fonts/Roboto-Regular.ttf");
 }
 
-
 @font-face {
 	font-family: "Qanelas ExtraBold";
 	src: url("../fonts/Qanelas-ExtraBold.ttf");
@@ -12,6 +11,11 @@
 @font-face {
 	font-family: "PT_Sans Regular";
 	src: url("../fonts/PT_Sans-Web-Regular.ttf");
+}
+
+@font-face {
+	font-family: "root-ui-bold";
+	src: url("../fonts/PT-Root-UI_Bold.ttf");
 }
 
 *,

@@ -1,7 +1,7 @@
 .promo-container {
-	width: 460px;
-	height: 460px;
+	max-width: 100%;
 	margin: 0 auto;
+	height: 100%;
 }
 
 .promo-slider {
@@ -13,11 +13,16 @@
 	padding-right: 0;
 }
 
+.promo-container .slider__items {
+	counter-reset: slide;
+}
+
 .promo-container .slider__item {
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 100%;
 	flex: 0 0 100%;
-	width: 100%;
+	max-width: 100%;
+	counter-increment: slide;
 	height: 100%;
 	position: relative;
 }
@@ -31,8 +36,4 @@
 	font-size: 32px;
 	font-weight: bold;
 	display: block;
-}
-
-.slider__item:nth-child(1) {
-	background-color: #f44336;
 }

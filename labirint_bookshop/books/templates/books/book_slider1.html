@@ -1,12 +1,10 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'css/ChiefSlider/chief-slider.css' %}">
-<link rel="stylesheet" href="{% static 'books/css/book_slider1_styles.css' %}">
-<link rel="stylesheet" href="{% static 'books/css/book_card1_styles.css' %}">
 <div class="book-slider-container">
 	<div class="book-slider" data-slider="chiefslider">
 		<div class="slider__container">
 			<div class="slider__wrapper">
 				<div class="slider__items">
+					{% for book in books %}
 					<div class="slider__item">
 						<div class="slider__item-container">
 							<div class="slider__item-content">
@@ -45,6 +43,7 @@
 							</div>
 						</div>
 					</div>
+					{% endfor %}
 				</div>
 			</div>
 		</div>

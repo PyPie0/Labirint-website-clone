@@ -17,3 +17,9 @@ def book_slider1(book_list):
 	return {
 		'books': book_list,
 	}
+
+@register.inclusion_tag('books/book_slider2.html')
+def book_slider2(book_list):
+	return {
+		'books': book_list,
+	}
